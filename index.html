@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="icone">
+        <hr id="linha" >
+        <img src="./assets/shared/logo.svg" alt="">
+    </div>
+
+    <div class="menu">
+        <a href="#main"><span class="numeros">00</span> HOME</a>
+        <a href="#destination"><span class="numeros">01</span> DESTINATION</a>
+        <a href=""><span class="numeros">02</span> CREW</a>
+        <a href=""><span class="numeros">03</span> TECHNOLOGY</a>
+    </div>
+</header>
+
+
+
+
+
+    <section class="container-home">
+    
+    <div  class="container-space">
+        <p class="subtitulo">SO, YOU WANT TO TRAVEL TO</p>
+        <h2 class="titulo">SPACE</h2>
+        <p class="descricao">
+            Let´s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edger
+            of it. Well sit back, and relax because wee´ll give you a tryly out of 
+            this world experience!
+        </p>
+    </div>
+    <div class="hover-button">
+    <button class="explor" >
+        <a class="des" href="#destination"><p>EXPLORE</p></a>
+    </button>
+    </div>
+
+
+
+
+
+    </section>
+<section id="destination" class="container-destination">
+
+    <div class="lua">
+
+        <p class="PICK"><span class="dest">01</span>PICK YOUR DESTINATION</p>
+        <img id="mooner" src="./assets/destination/image-moon.png" alt="">
+
+
+
+
+
+        <img id="mars" src="./assets/destination/image-mars.png" alt="">
+        
+
+
+        <img id="europa" src="./assets/destination/image-europa.png" alt="">
+    </div>
+    <div  class="moon">
+        <button id="mon" class="bot1">Lua</button>
+        <button id="marty" class="bot2">mars</button>
+        <button id="europ" class="bot3">Europa</button>
+
+    <p id="mooner-text" class="luas">
+        MOON
+    </p>
+    <p id="mars-text" class="luas">
+    MARS
+    </p>
+    <p id="europa-text" class="luas">
+        EUROPA
+    </p>
+
+
+
+
+
+
+    <p id="mooner-parag" class="parag-lua">
+        See our planet as you´ve never seen it before. A perfect
+        relaxing trip away to help regain persective and come 
+        back refreshed. While you´re there, take in some history by visiting the Luna
+        2 and Apollo 11 landing sites.
+
+
+
+    </p>
+
+
+
+
+    
+
+
+
+    <p id="mars-parag" class="parag-lua">
+        Don´t forget to pack your hiking boots. you´ll need them to 
+        tackle Olympus Mons, the tallest planetary mountain in our solar 
+        system. it´s two and a half times the size of Everest!
+    </p>
+
+
+
+
+    <p id="europa-parag" class="parag-lua">
+        The smallest of the four Galilean moons orbiting Jupiter, 
+        Europa is a winter lover´s dream. With an icy surface, it´s 
+        perfect for a bit of ice skating, curling, hockey, or simple relaxation in you snug wintery cabin.
+        
+        
+    </p>
+    
+<div class="numerico">
+  <hr class="linha-2" />
+  <div class="numero" id="mooner-numb">
+    <div class="coluna">
+      <p class="avg">AVG. DISTANCE</p>
+      <p class="numb">384,400 KM</p>
+    </div>
+    <div class="coluna">
+      <p class="est">EST. TRAVEL TIME</p>
+      <p class="numb2">3 DAYS</p>
+    </div>
+  </div>
+</div>
+            
+                <div class="numero2" id="mars-numb">
+                <hr class="linha-2">
+                <p class="avg">AVG. DISTANCE2</p>
+                <p class="est">EST. TRAVEL TIME2</p>
+                <p class="numb">384,400 KM2</p>
+                <p class="numb2">3 DAYS2</p>
+
+                </div>
+                <div class="numero3" id="europ-numb">
+                <hr class="linha-2">
+                <p class="avg">AVG. DISTANCE3</p>
+                <p class="est">EST. TRAVEL TIME2</p>
+                <p class="numb">384,400 KM2</p>
+                <p class="numb2">3 DAYS2</p>
+
+                </div>
+                
+
+
+            </div>
+
+</div>
+
+    </div>
+
+
+
+
+</section>
+
+<script>
+const lua = document.getElementById("mooner");
+const marte = document.getElementById("mars");
+const europa = document.getElementById("europa");
+
+function mostrarImagem(destino) {
+    lua.style.display = "none";
+    marte.style.display = "none";
+    europa.style.display = "none";
+
+    destino.style.display = "block";
+}
+
+document.getElementById("mon").addEventListener("click", () => mostrarImagem(lua));
+document.getElementById("marty").addEventListener("click", () => mostrarImagem(marte));
+document.getElementById("europ").addEventListener("click", () => mostrarImagem(europa));
+
+// Agora o texto:
+const luaTexto = document.getElementById("mooner-text");
+const marteTexto = document.getElementById("mars-text");
+const europaTexto = document.getElementById("europa-text");
+
+function mostrarTexto2(destinoTitle) {
+    luaTexto.style.display = "none";
+    marteTexto.style.display = "none";
+    europaTexto.style.display = "none";
+
+    destinoTitle.style.display = "block";
+}
+
+document.getElementById("mon").addEventListener("click", () => mostrarTexto2(luaTexto));
+document.getElementById("marty").addEventListener("click", () => mostrarTexto2(marteTexto));
+document.getElementById("europ").addEventListener("click", () => mostrarTexto2(europaTexto));
+
+
+
+
+
+
+const luaParag = document.getElementById("mooner-parag");
+const marteParag = document.getElementById("mars-parag");
+const europaParag = document.getElementById("europa-parag");
+
+function mostrarTexto(destinoTexto) {
+    luaParag.style.display = "none";
+    marteParag.style.display = "none";
+    europaParag.style.display = "none";
+
+    destinoTexto.style.display = "block";
+}
+
+document.getElementById("mon").addEventListener("click", () => mostrarTexto(luaParag));
+document.getElementById("marty").addEventListener("click", () => mostrarTexto(marteParag));
+document.getElementById("europ").addEventListener("click", () => mostrarTexto(europaParag));
+
+
+
+
+
+
+
+const luanumb = document.getElementById("mooner-numb");
+const martenumb = document.getElementById("mars-numb");
+const europanumb = document.getElementById("europ-numb");
+
+function mostrarnumb(destinonumb) {
+    luanumb.style.display = "none";
+    martenumb.style.display = "none";
+    europanumb.style.display = "none";
+
+    destinonumb.style.display = "block";
+}
+
+document.getElementById("mon").addEventListener("click", () => mostrarnumb(luanumb));
+document.getElementById("marty").addEventListener("click", () => mostrarnumb(martenumb));
+document.getElementById("europ").addEventListener("click", () => mostrarnumb(europanumb));
+
+
+
+
+
+</script>
+
+</body>
+</html>

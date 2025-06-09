@@ -1,0 +1,332 @@
+ body{
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: rgb(10, 11, 27) ;
+
+} 
+header{
+    position: absolute;
+    align-items: self-end;
+    display: flex;
+    gap: 100vh;
+    margin-top: 30px;
+    margin-left: 0px;
+    position: fixed;
+    z-index: 1000;
+}
+.menu a{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: aliceblue;
+    padding-left: 10px;
+    margin-left: 50px;
+    text-decoration: none;
+
+}
+#linha{
+    position: absolute;
+    border: none;
+    height: 2px;
+    background-color: #ffffff67;
+    width: 54%;
+    margin-left: 250px;
+    margin-top: 20px;
+    z-index: 2000;
+}
+
+
+.numeros{
+    font-weight: 500;
+    padding-right: 10px;
+}
+.menu{
+    background: rgba(255, 255, 255, 0.034); /* fundo semitransparente */
+    backdrop-filter: blur(10px);          /* AQUI acontece o blur */
+   -webkit-backdrop-filter: blur(10px);  /* suporte para Safari */
+    width: 690px;
+    height: 90px;
+    display: flex;
+    
+    font-family: "Barlow Condensed", sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    
+    
+}
+.icone img{
+    margin-left: 100px;
+}
+.container-destination{
+    padding-top: 0PX;
+    display: block;
+   
+
+    background-image:url(./assets/destination/background-destination-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;         /* Faz a imagem cobrir toda a área */
+    background-position: center;    /* Centraliza a imagem */
+    
+}
+
+.container-home{
+    
+
+    background-image:url(./assets/home/background-home-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;         /* Faz a imagem cobrir toda a área */
+    background-position: center;    /* Centraliza a imagem */
+    padding: 0
+    ;
+}
+.container-space{
+    color: white;
+    margin-left: 10%;
+    padding-top: 400px;
+
+
+}
+.subtitulo{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.titulo{
+    font-family: "Bellefair", sans-serif;
+    font-size: 180px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.descricao{
+    padding:0px;
+    width: 40%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+.hover-button{
+    width: 500px;
+    background-color:rgba(255, 255, 255, 0.363) ;
+    height: 500px;
+    top: 350px;
+    position: absolute;
+    right: 240px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0);
+    
+}
+.explor{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    right: 105px;
+    border-radius: 50%;
+    border: 0;
+    display: block;
+    font-family: "Bellefair", sans-serif;
+    font-size: 40px;
+}
+.hover-button:hover{
+    background-color: rgba(240, 248, 255, 0.295);
+    transition: opacity 0.1s ease-in-out;
+}
+.container-destination{
+    padding-top: 200px;
+    display: flex;
+}
+.lua img{
+    width: 400px;
+    padding-top: 100px;
+    margin-left: 200px;
+}
+.lua{
+    margin-top: 40px;
+
+
+    width: 35%;
+    margin-left: 10%;
+}
+.PICK{
+    color: white;
+    font-size: 40px;
+    margin-left: 100px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight:300 ;
+}
+.dest{
+    color: rgba(240, 248, 255, 0.452);
+    font-size: 40px;
+    padding: 20px;
+    font-weight: 600;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.botao{
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.moon{
+
+    color: white;
+
+    width: 30%;
+    margin-top: 0px;
+}
+
+
+
+.bot1{
+    border: 0px;
+    
+    font-weight: 300;
+    font-size: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 70px;
+    position: absolute;
+    left: 860px;
+    top: 135vh;
+    background-color:rgba(240, 248, 255, 0);
+    
+    color: rgba(255, 255, 255, 0.651);
+}
+.bot2{
+    font-weight: 300;
+    font-size: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    width: 70px;
+    position: absolute;
+    left: 940px;
+    top: 135vh;
+    background-color:rgba(240, 248, 255, 0);
+    border: 0px;
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.bot3{
+    font-weight: 300;
+    font-size: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+    background-color:rgba(240, 248, 255, 0);
+    border: 0px;
+    width: 70px;
+    position: absolute;
+    left: 1030px;
+    top: 135vh;
+    color: rgba(255, 255, 255, 0.651);
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+
+
+
+
+
+.luas{
+    margin-top: 260px;
+    font-family: "Bellefair", sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+
+    
+}
+.parag-lua{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: rgba(240, 248, 255, 0.664);
+}
+#mooner,#mooner-text,#mooner-parag{
+    display: block;
+}
+#mars,#mars-text,#mars-parag{
+    display: none;
+}
+#europa,#europa-text,#europa-parag{
+    display: none;
+}
+.linha-2{
+    border: none;
+    height: 1px;
+    background-color: #ffffff67;
+    width: 100%;
+    margin-top: 50px;
+}
+.numero,.numero2,.numero3{
+    display: flex;
+
+    color: white;
+
+
+
+
+    font-family: "Barlow Condensed", sans-serif;
+}
+.numb{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.numb2{
+    font-size: 50px;
+        padding-top: 0;
+        margin-top: 0;
+        font-family: "Barlow Condensed", sans-serif;
+        
+}
+.avg{
+    color:rgba(0, 0, 0, 0.712) ;
+    font-size: 20px;
+    width: 200px;
+    font-family: "Barlow Condensed", sans-serif;
+    background-color: aqua;
+
+}
+.est{
+    font-size: 20px;
+    
+    font-family: "Barlow Condensed", sans-serif;
+    color:rgba(241, 241, 243, 0.712);
+    background-color: aqua;
+    width: 200px;
+    
+    
+
+}
+    
+
+    #europ-numb,#mars-numb{
+        display: none;
+    }
+#mooner-numb{
+    display: block;
+}
+
+
+.numero {
+  display: flex;
+
+  gap: 80px; /* espaço entre colunas */
+  margin-top: 40px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+
+  background-color: antiquewhite;
+  width: 200px;
+
+}
