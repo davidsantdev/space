@@ -42,11 +42,13 @@
             this world experience!
         </p>
     </div>
-    <div class="hover-button">
-    <button class="explor" >
-        <a class="des" href="#destination"><p>EXPLORE</p></a>
-    </button>
-    </div>
+<div class="explor">
+  EXPLORE
+  <div class="hover-button"></div>
+</div>
+
+
+
 
 
 
@@ -71,19 +73,24 @@
         <img id="europa" src="./assets/destination/image-europa.png" alt="">
     </div>
     <div  class="moon">
-        <button id="mon" class="bot1">Lua</button>
-        <button id="marty" class="bot2">mars</button>
-        <button id="europ" class="bot3">Europa</button>
+        <button id="mon" class="bot1">Lua  <span id="linh-lua"></span></button>
+        <button id="marty" class="bot2">mars  <span id="linh-mars"></span></button>
+        <button id="europ" class="bot3">Europa <span id="linh-europ"></span></button>
 
     <p id="mooner-text" class="luas">
         MOON
+        <span class="linh"></span>
     </p>
     <p id="mars-text" class="luas">
     MARS
+    <span class="linh"></span>
     </p>
     <p id="europa-text" class="luas">
         EUROPA
+        
+        
     </p>
+    
 
 
 
@@ -123,50 +130,48 @@
         
         
     </p>
+
+
+
+
     
-<div class="numerico">
-  <hr class="linha-2" />
-  <div class="numero" id="mooner-numb">
-    <div class="coluna">
-      <p class="avg">AVG. DISTANCE</p>
-      <p class="numb">384,400 KM</p>
-    </div>
-    <div class="coluna">
-      <p class="est">EST. TRAVEL TIME</p>
-      <p class="numb2">3 DAYS</p>
-    </div>
-  </div>
-</div>
-            
-                <div class="numero2" id="mars-numb">
-                <hr class="linha-2">
-                <p class="avg">AVG. DISTANCE2</p>
-                <p class="est">EST. TRAVEL TIME2</p>
-                <p class="numb">384,400 KM2</p>
-                <p class="numb2">3 DAYS2</p>
+    
 
-                </div>
-                <div class="numero3" id="europ-numb">
-                <hr class="linha-2">
-                <p class="avg">AVG. DISTANCE3</p>
-                <p class="est">EST. TRAVEL TIME2</p>
-                <p class="numb">384,400 KM2</p>
-                <p class="numb2">3 DAYS2</p>
-
-                </div>
-                
-
-
-            </div>
-
-</div>
-
-    </div>
 
 
 
 
 </section>
+<section class="destino">
+        <p class="PICK"><span class="dest">02</span>MEET YOUR CREW</p>
+
+
+
+        
+        <div class="container-crew" id="doug">
+            <p class="com">COMANDER</p>
+            <p class="comand">DOUGLAS  HURLEY</p>
+            <p class="parag">
+                Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+            </p>
+            
+        </div>
+        <div class="container-img" id="doug-img">
+            <img src="./assets/crew/image-douglas-hurley.png" alt="">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
 
 <script>
 const lua = document.getElementById("mooner");
@@ -185,7 +190,7 @@ document.getElementById("mon").addEventListener("click", () => mostrarImagem(lua
 document.getElementById("marty").addEventListener("click", () => mostrarImagem(marte));
 document.getElementById("europ").addEventListener("click", () => mostrarImagem(europa));
 
-// Agora o texto:
+// Agora  texto:
 const luaTexto = document.getElementById("mooner-text");
 const marteTexto = document.getElementById("mars-text");
 const europaTexto = document.getElementById("europa-text");
@@ -247,7 +252,21 @@ document.getElementById("europ").addEventListener("click", () => mostrarnumb(eur
 
 
 
+const linhlua = document.getElementById("linh-lua");
+const linhamars = document.getElementById("linh-mars");
+const linhEurop = document.getElementById("linh-europ");
 
+function mostrarlinha(destinolinha) {
+    linhlua.style.display = "none";
+    linhamars.style.display = "none";
+    linhEurop.style.display = "none";
+
+    destinolinha.style.display = "block";
+}
+
+document.getElementById("mon").addEventListener("click", () => mostrarlinha(linhlua));
+document.getElementById("marty").addEventListener("click", () => mostrarlinha(linhamars));
+document.getElementById("europ").addEventListener("click", () => mostrarlinha(linhEurop));
 
 </script>
 

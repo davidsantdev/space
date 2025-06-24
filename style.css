@@ -61,8 +61,6 @@ header{
 .container-destination{
     padding-top: 0PX;
     display: block;
-   
-
     background-image:url(./assets/destination/background-destination-desktop.jpg);
     width: 100vw;
     height: 100vh;
@@ -76,6 +74,7 @@ header{
     
 
     background-image:url(./assets/home/background-home-desktop.jpg);
+
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -110,33 +109,43 @@ header{
     font-size: 25px;
     font-weight: 200;
 }
-.hover-button{
-    width: 500px;
-    background-color:rgba(255, 255, 255, 0.363) ;
-    height: 500px;
-    top: 350px;
-    position: absolute;
-    right: 240px;
-    border-radius: 50%;
-    background-color: rgba(240, 248, 255, 0);
-    
+.explor {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  right: 240px;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bellefair", sans-serif;
+  font-size: 40px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.911);
+  z-index: 2;
 }
-.explor{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 100px;
-    right: 105px;
-    border-radius: 50%;
-    border: 0;
-    display: block;
-    font-family: "Bellefair", sans-serif;
-    font-size: 40px;
+
+.hover-button {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(240, 248, 255, 0.295);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
 }
-.hover-button:hover{
-    background-color: rgba(240, 248, 255, 0.295);
-    transition: opacity 0.1s ease-in-out;
+
+.explor:hover .hover-button {
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -100px;
 }
+
 .container-destination{
     padding-top: 200px;
     display: flex;
@@ -195,7 +204,7 @@ header{
     top: 135vh;
     background-color:rgba(240, 248, 255, 0);
     
-    color: rgba(255, 255, 255, 0.651);
+    color: rgb(255, 255, 255);
 }
 .bot2{
     font-weight: 300;
@@ -207,7 +216,7 @@ header{
     top: 135vh;
     background-color:rgba(240, 248, 255, 0);
     border: 0px;
-    color: rgba(255, 255, 255, 0.651);
+    color: rgb(255, 255, 255);
 }
 
 .bot3{
@@ -220,7 +229,7 @@ header{
     position: absolute;
     left: 1030px;
     top: 135vh;
-    color: rgba(255, 255, 255, 0.651);
+    color: rgb(255, 255, 255);
 }
 button a{
     text-decoration: none;
@@ -323,10 +332,97 @@ button a{
 }
 
 .coluna {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
-  background-color: antiquewhite;
-  width: 200px;
+background-color: antiquewhite;
+width: 200px;
 
 }
+#linh-lua{
+    width: 50px;
+    background-color: aliceblue;
+    height: 7px;
+    display: block;
+    margin-left: 7px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+#linh-mars,#linh-europ{
+    width: 50px;
+    background-color: aliceblue;
+    height: 7px;
+    display: none;
+    margin-left: 7px;
+    margin-top: 10px;
+    color: aliceblue;
+
+}
+.destino{
+    width: 100%;
+    background-image:url(./assets/crew/background-crew-desktop.jpg);
+
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;         /* Faz a imagem cobrir toda a área */
+    background-position: center;    /* Centraliza a imagem */
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+
+
+
+
+.container-crew{
+    margin-left: 10%;
+    
+    width: 35%;
+
+    height: 40vh;
+    
+    
+    
+
+    p{
+        color:#ffff
+    }
+    .com{
+    
+        font-family: "Bellefair", sans-serif;
+        font-size: 40px;
+        color: #ffffff8f;
+        font-weight: 400;
+        
+    }
+    .comand{
+    font-family: "Bellefair", sans-serif;
+    font-size: 70px;
+    }
+    .parag{
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 24px;
+        color: #ffffffb6;
+    }
+}
+.container-img{
+    width: 40%;
+    display: flex;
+    background-color: rgba(250, 235, 215, 0);
+
+    height: 70vh;
+}
+#mark,#mark-img{
+    display: block;
+}
+#doug,#doug-img{
+    display: block;
+}
+
+
